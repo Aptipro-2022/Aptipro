@@ -1,0 +1,60 @@
+<div class="container-fluid">
+    <h1>aptipro</h1>
+    <h3>Learn Aptitude Absolutely for Free!</h3>
+    <div class="container">
+        <div class="row" style="padding-top: 75px;">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="row button-group">
+                        <div class="col-sm-6">
+                            <button class="signup" (click)="signup()">Sign Up</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="signin" (click)="signin()">Sign In</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form login-form p-3" *ngIf="signupform">
+                            <div class="form-control input-container">
+                                <mat-icon>person_outline</mat-icon>
+                                <input type="text" [(ngModel)]="details.firstName" name="FirstName" placeholder="First & Last Name">
+                            </div>
+                            <div class="form-control input-container">
+                                <mat-icon>mail_outline</mat-icon>
+                                <input type="email" [(ngModel)]="details.email" name="Email"placeholder="Email">
+                            </div>
+                            <div class="form-control input-container">
+                                <mat-icon>lock</mat-icon>
+                                <input type="password" [(ngModel)]="details.password" name="password" placeholder="Password">
+                            </div>
+                            <div class="accountbtn">
+                                <button class="acctbtn" (click)="createAcc()">create an Account</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="connect pt-3">
+                        <div class="row">
+                            <div class="col-sm-4 line"><hr></div>
+                            <div class="col-sm-4 content">or connect with</div>
+                            <div class="col-sm-4 line"><hr></div>
+                        </div>
+                    </div>
+                    <div class="connect-link">
+                        <div class="row">
+                            <div class="col-sm-4 facebook content p-3">
+                                <a href="#"><img src="../../assets/images/google-1-1.svg" alt=""></a>
+                            </div>
+                            <div class="col-sm-4 facebook content p-3">
+                                <a href="#"><img src="../../assets/images/facebook.png"></a>
+                            </div>
+                            <div class="col-sm-4 facebook content p-3">
+                                <a href="#"><img src="../../assets/images/linkedin-icon-2 (1).png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
